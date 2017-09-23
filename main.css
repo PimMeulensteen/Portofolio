@@ -3,23 +3,32 @@
   moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  touch-action: none;
 }
 
 html {
   background-color: rgb(13, 61, 81);
+  transition: all linear 1s;
 }
 
 #container {
   max-width: calc(100vh*4/3);
   margin: 0 auto;
+  bottom: 0;
   height: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  left: calc(-50vw + 50%);
+  right: calc(-50vw + 50%);
+  margin-left: auto;
+  margin-right: auto;
+  transition: all linear 1s;
 }
 
 section {
   background-color: red;
+  postion: absolute;
   margin: 1.25%;
   height: 30%;
   width: 22.5%;
@@ -54,6 +63,7 @@ h2 {
 
 section:hover:not(#e) {
   filter: brightness(80%);
+  cursor: pointer;
 }
 
 #a {
@@ -61,11 +71,11 @@ section:hover:not(#e) {
 }
 
 #b {
-  background-color: rgb(247, 182, 62);
+  background-color: rgb(195, 209, 222);
 }
 
 #c {
-  background-color: rgb(195, 209, 222);
+  background-color: rgb(87, 168, 220);
 }
 
 #d {
@@ -85,7 +95,7 @@ section:hover:not(#e) {
 }
 
 #i {
-  background-color: rgb(87, 168, 220);
+  background-color: rgb(247, 182, 62);
 }
 
 #j {
