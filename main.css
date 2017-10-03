@@ -3,11 +3,11 @@
   moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  touch-action: none;
+  touch-action: none
 }
 
 html {
-  transition: all linear 1s;
+  transition: all linear 1s
 }
 
 #container {
@@ -22,7 +22,7 @@ html {
   right: calc(-50vw + 50%);
   margin-left: auto;
   margin-right: auto;
-  transition: all linear 1s;
+  transition: all linear 1s
 }
 
 section {
@@ -31,86 +31,85 @@ section {
   height: 30%;
   width: 22.5%;
   filter: brightness(100%);
-  transition: .4s;
+  transition: .4s
 }
 
 #e {
   position: relative;
   width: 72.5%;
-  background-color: rgb(214, 33, 36);
-  color: white;
+  background-color: #d62124;
+  color: #fff;
   font-weight: 800;
-  font-family: sans-serif;
+  font-family: sans-serif
 }
 
 #text {
   position: absolute;
   bottom: 0;
-  margin: 12px;
+  margin: 12px
 }
 
 h1 {
   bottom: 3em;
-  font-size: 5em;
+  font-size: 5em
 }
 
 h2 {
   font-weight: 200;
-  font-size: 3em;
+  font-size: 3em
 }
 
 section:hover:not(#e) {
   filter: brightness(80%);
-  cursor: pointer;
+  cursor: pointer
 }
 
 section:not(#e) {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center
 }
 
 #a {
-  background-color: rgb(18, 138, 167);
+  background-color: #128aa7
 }
 
 img {
-  /*position:  absolute;*/
   object-fit: contain;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  padding: 12.5%;
+  padding: 12.5%
 }
 
 #b {
-  background-color: rgb(195, 209, 222);
+  background-color: #c3d1de
 }
 
 #c {
-  background-color: rgb(87, 168, 220);
+  background-color: #57a8dc
 }
 
 #d {
-  background-color: rgb(52, 73, 94);
+  background-color: #34495e
 }
 
 #f {
-  background-color: rgb(18, 183, 167);
+  background-color: #12b7a7
 }
 
 #g {
-  background-color: rgb(117, 43, 88);
+  background-color: #752b58
 }
 
 #h {
-  background-color: rgb(77, 153, 77);
+  background-color: #4d994d
 }
 
 #i {
-  background-color: rgb(247, 182, 62);
+  background-color: #f7b63e
 }
 
 #j {
-  background-color: rgb(39, 103, 47);
+  background-color: #27672f
 }
