@@ -6,19 +6,24 @@
   <link href="main.css" type="text/css" rel="stylesheet" />
   <link href="animation.css" type="text/css" rel="stylesheet" />
   <link href="small.css" type="text/css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: rgb(13, 61, 81);
+    }
+  </style>
 
 </head>
 
-<body>
+<body onload='load_img()'>
   <div id='container'>
     <section id='a'>
-      <img src='img/github-512.png' alt='GitHub' title='Github: PimMeulensteen' />
+      <img data-src='img/github-512.png' alt='GitHub' title='Github: PimMeulensteen' />
     </section>
     <section id='b'>
       STATS
     </section>
     <section id='c'>
-      <img src='img/so-icon.svg' alt='StackOverflow' title='StackOverflow: Pim M' />
+      <img data-src='img/so-icon.svg' alt='StackOverflow' title='StackOverflow: Pim M' />
     </section>
     <section id='d'>
       MATH
@@ -50,11 +55,8 @@
     </section>
   </div>
   <div id='information'></div>
-  <style>
-    /*@import url("main.css");*/
-    /*@import url("animation.css");*/
-  </style>
   <script src='main.js'></script>
+  <script src='img.js'></script>
 </body>
 
 </html>
