@@ -12,8 +12,6 @@ function click_event_handeler() {
             case "c":
                 window.location.href = "https://stackoverflow.com/users/7267641/";
                 break
-            case "e":
-                break
             case "h":
                 break
             case "i":
@@ -103,11 +101,6 @@ window.onresize = function() {
 };
 
 
-
-
-
-
-
 //Check if touch is avalivle:
 screen_h = screen.height / 4;
 
@@ -117,8 +110,7 @@ function hasTouch() {
         (navigator.msMaxTouchPoints > 0)); // current IE10
 }
 
-if (hasTouch()) { //If it is, make swipe guesture.
-    console.log("Touch detected!")
+if (hasTouch()) { //If it is, make swipe guesture.)
     document.addEventListener("touchstart", function(event) {
         touching = true;
         down_y = event.touches[0].clientY;
@@ -128,7 +120,6 @@ if (hasTouch()) { //If it is, make swipe guesture.
             if (down_y < event.touches[0].clientY - screen_h) {
                 down()
             }
-
         }
     });
     document.addEventListener("touchend", function(event) {
