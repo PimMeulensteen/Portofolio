@@ -1,9 +1,30 @@
 //Handeler for clicks on setions
-function click_event_handeler(el) {
+function click_event_handeler() {
     var elements_with_information = ["b", "d", "f", "j", "g", "f"];
-    var id = el.target.id;
+    var id = this.id;
     if (elements_with_information.indexOf(id) >= 0) {
         up(id);
+    } else {
+        switch (id) {
+            case "a":
+                window.location.href = "https://github.com/PimMeulensteen";
+                break
+            case "c":
+                window.location.href = "https://stackoverflow.com/users/7267641/";
+                break
+            case "e":
+                break
+            case "g":
+                break
+            case "h":
+                break
+            case "i":
+                break
+            case "j":
+                break
+
+        }
+
     }
 }
 
