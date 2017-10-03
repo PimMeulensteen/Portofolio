@@ -14,15 +14,10 @@ function click_event_handeler() {
                 break
             case "e":
                 break
-            case "g":
-                break
             case "h":
                 break
             case "i":
                 break
-            case "j":
-                break
-
         }
 
     }
@@ -56,11 +51,37 @@ function down() {
     document.documentElement.style.backgroundColor = "rgb(13, 61, 81)";
 }
 
-function up(colour) {
-    var c = window.getComputedStyle(document.getElementById(colour), null).getPropertyValue("background-color");
+function up(id) {
+    var c = window.getComputedStyle(document.getElementById(id), null).getPropertyValue("background-color");
+    set_information(id);
     document.documentElement.style.backgroundColor = c;
     container_div.style.bottom = "150%";
     information_div.style.top = "0%";
+}
+
+function set_information(id) {
+    var info = {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": "",
+        "e": "",
+        "f": "",
+        "g": "<span id='g'>\
+                <h1>Contact</h1>\
+                    <p>\
+                        <b>Email (privé):</b> pim@meulensteen.net <br>\
+                        <b>Email (school):</b> 18038@edu.msa.nl<br>\
+                        <b>Email (school 2):</b> pimmeulensteen@ictindewolken.nl<br>\
+                    </p>\
+              </span>",
+        "h": "",
+        "i": "",
+        "j": ""
+
+    };
+    information_div.innerHTML = info[id];
+
 }
 
 //If landschape -> make 3x4:
@@ -97,18 +118,14 @@ function hasTouch() {
 }
 
 if (hasTouch()) { //If it is, make swipe guesture.
-    log("Touch detected!")
+    console.log("Touch detected!")
     document.addEventListener("touchstart", function(event) {
         touching = true;
         down_y = event.touches[0].clientY;
-        log(down_y);
-        log("down_y");
     });
     document.addEventListener("touchmove", function(event) {
         if (touching) {
-            log(event.touches[0].clientY);
             if (down_y < event.touches[0].clientY - screen_h) {
-                log(touching);
                 down()
             }
 
