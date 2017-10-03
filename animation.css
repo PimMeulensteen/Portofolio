@@ -26,20 +26,19 @@ html {
   margin-right: auto;
 }
 
-
 #i {
   display: none;
-    position: relative;
-    font-family: Tahoma,sans-serif;
-    font-size: 200%;
-    color: #6b4e3d;
-    font-weight: bold;
-    letter-spacing: -2px;
+  position: relative;
+  font-family: Tahoma, sans-serif;
+  font-size: 200%;
+  color: #6b4e3d;
+  font-weight: bold;
+  letter-spacing: -2px;
 }
-#i span {
-  font-family: "Courier New",monospace;
-color: #ccc;
 
-letter-spacing: 0;
-top: 15px;
+#i span {
+  font-family: "Courier New", monospace;
+  color: #ccc;
+  letter-spacing: 0;
+  top: 15px;
 }
