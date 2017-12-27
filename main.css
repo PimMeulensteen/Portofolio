@@ -1,115 +1,130 @@
 * {
-  margin: 0;
-  moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  touch-action: none
+    margin: 0;
+    moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    touch-action: none
 }
 
 html {
-  transition: all linear 1s
+    transition: all linear 1s;
+    font-family: sans-serif
 }
 
 #container {
-  max-width: calc(100vh*4/3);
-  margin: 0 auto;
-  bottom: 0;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  left: calc(-50vw + 50%);
-  right: calc(-50vw + 50%);
-  margin-left: auto;
-  margin-right: auto;
-  transition: all linear 1s
+    max-width: calc(100vh*4/3);
+    margin: 0 auto;
+    bottom: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    left: calc(-50vw + 50%);
+    right: calc(-50vw + 50%);
+    margin-left: auto;
+    margin-right: auto;
+    transition: all linear 1s
+}
+#music {
+    position: absolute;
+    bottom: 0;
+    margin: 1vw;
+}
+#now_playing {
+    width: calc(100vh*1.25*0.2);
+    text-align: center;
+}
+#song{
+    width: calc(100vh*1.25*0.2);
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 section {
-  background-color: red;
-  margin: 1.25%;
-  height: 30%;
-  width: 22.5%;
-  filter: brightness(100%);
-  transition: .4s
+    background-color: red;
+    margin: 1.25%;
+    height: 30%;
+    width: 22.5%;
+    filter: brightness(100%);
+    transition: .4s
 }
 
 #e {
-  position: relative;
-  width: 72.5%;
-  background-color: #d62124;
-  color: #fff;
-  font-weight: 800;
-  font-family: sans-serif
+    position: relative;
+    width: 72.5%;
+    background-color: #d62124;
+    color: #fff;
+    font-weight: 800;
+    font-family: sans-serif
 }
 
 #text {
-  position: absolute;
-  bottom: 0;
-  margin: 12px
+    position: absolute;
+    bottom: 0;
+    margin: 12px
 }
 
 h1 {
-  bottom: 3em;
-  font-size: 5em
+    bottom: 3em;
+    font-size: 5em
 }
 
 h2 {
-  font-weight: 200;
-  font-size: 3em
+    font-weight: 200;
+    font-size: 3em
 }
 
 section:hover:not(#e) {
-  filter: brightness(80%);
-  cursor: pointer
+    filter: brightness(80%);
+    cursor: pointer
 }
 
 section:not(#e) {
-  display: flex;
-  justify-content: center;
-  align-items: center
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 #a {
-  background-color: #128aa7
+    background-color: #128aa7
 }
 
 img {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  padding: 12.5%
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 12.5%
 }
 
 #b {
-  background-color: #c3d1de
+    background-color: #c3d1de
 }
 
 #c {
-  background-color: #57a8dc
+    background-color: #57a8dc
 }
 
 #d {
-  background-color: #34495e
+    background-color: #34495e
 }
 
 #f {
-  background-color: #12b7a7
+    background-color: #12b7a7
 }
 
 #g {
-  background-color: #752b58
+    background-color: #752b58
 }
 
 #h {
-  background-color: #4d994d
+    background-color: #4d994d
 }
 
 #i {
-  background-color: #f7b63e
+    background-color: #f7b63e
 }
 
 #j {
-  background-color: #27672f
+    background-color: #27672f
 }
